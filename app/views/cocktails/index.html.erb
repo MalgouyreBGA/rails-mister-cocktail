@@ -1,0 +1,19 @@
+<div class="index">
+    <div class="text-center mb-2">
+        <h1>Index</h1>
+    </div>
+    <div class="bbtom"></div>
+    <div>
+        <ul>
+        <% @cocktails.each do |c| %>
+            <li class="linebothend">
+                <div><%= c.id %> : <%= link_to c.name, cocktail_path(c) %></div>
+                <div><button class="btn btn-primary"><%= link_to "Add dose", new_cocktail_dose_path(c), class: "text-white" %></button></div>
+            </li>
+        <% end %>
+        </ul>
+    </div>
+    <div class="bbtom"></div>
+    <button class="btn btn-primary "> <%= link_to "New cocktail", new_cocktail_path, class: "text-white" %></button>
+</div>
+

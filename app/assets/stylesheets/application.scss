@@ -1,0 +1,63 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.index {
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 0 auto;
+}
+
+.form {
+    padding: 10px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 0 auto;
+}
+
+.show {
+    padding: 10px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin: 0 auto;
+}
+
+.bbtom {
+    border-bottom: 2px solid gray;
+    margin: 15px 0;
+    width: 200px;
+}
+
+.linebothend {
+    list-style-type: none;
+    display: inline-flex;
+    width: 300px;
+    margin: 5px 0;
+    flex-direction: row ;
+    justify-content: space-between ;
+}
+
+.formy {
+    width: 300px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
